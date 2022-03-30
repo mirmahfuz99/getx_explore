@@ -1,10 +1,10 @@
 import 'package:getx_explore/data/provider/explore_api.dart';
 
 class ExploreRepository {
-  final ExploreApiClient myFaqApiClient;
+  final ProductsApiClient myFaqApiClient;
   ExploreRepository({required this.myFaqApiClient});
 
   getFaqData(){
-    return myFaqApiClient.getFaq();
+    return myFaqApiClient.getProducts();
   }
 }
