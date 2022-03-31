@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'routes/get_route_management.dart';
+import 'routes/app_pages.dart';
 
 Future<void> main() async {
   runApp(CSEBanglaAPP());
@@ -14,6 +14,7 @@ class CSEBanglaAPP extends StatelessWidget {
     return GetMaterialApp(
       key: _globalKey,
       debugShowCheckedModeBanner: false,
+      initialRoute: AppPages.exploreProductScreen,
       getPages: AppPages.pages,
     );
   }

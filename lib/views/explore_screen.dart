@@ -15,7 +15,7 @@ class ExploreScreen extends GetView<ExploreController> {
             },
             builder: (_) {
               return _.faqList.length < 1 ?
-              CircularProgressIndicator():
+              Center(child: CircularProgressIndicator()):
               SingleChildScrollView(
                 child: Card(
                   margin: const EdgeInsets.only(left: 10, right: 10),

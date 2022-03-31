@@ -12,11 +12,11 @@ class ProductsApiClient {
       var response = await httpClient.get(url);
       if(response.statusCode == 200){
         ProductsModel productsModel = ProductsModel.fromJson(json.decode(response.body));
-        return productsModel;
+        print(productsModel.products!.length);
+        return productsModel.products;
       }else print("error !");
     }catch(_) {
 
     }
   }
-
 }

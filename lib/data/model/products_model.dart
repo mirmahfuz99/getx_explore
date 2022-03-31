@@ -10,7 +10,7 @@ class ProductsModel {
     if (json['products'] != null) {
       products = <Products>[];
       json['products'].forEach((v) {
-        products!.add(new Products.fromJson(v));
+        products!.add(Products.fromJson(v));
       });
     }
     total = json['total'];
@@ -36,7 +36,7 @@ class Products {
   String? description;
   int? price;
   double? discountPercentage;
-  double? rating;
+  var rating;
   int? stock;
   String? brand;
   String? category;
