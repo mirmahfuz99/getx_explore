@@ -1,6 +1,6 @@
 import 'package:get/get_navigation/src/routes/get_route.dart';
-import 'package:getx_explore/bindings/explore_bindings.dart';
-import 'package:getx_explore/views/explore_screen.dart';
+import 'package:getx_explore/bindings/products_bindings.dart';
+import '../views/landing_screen.dart';
 part 'app_routes.dart';
 
 class AppPages {
@@ -8,7 +8,7 @@ class AppPages {
   static final pages = [
     GetPage(
       name: Routes.exploreProductsScreen,
-      page: () => ExploreScreen(),
+      page: () => LandingScreen(),
       binding: ExploreBindings(),
     ),
   ];

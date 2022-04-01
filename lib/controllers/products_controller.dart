@@ -1,6 +1,6 @@
 import 'package:get/get.dart';
 import 'package:getx_explore/data/model/products_model.dart';
-import 'package:getx_explore/data/repository/explore_repository.dart';
+import 'package:getx_explore/data/repository/products_repository.dart';
 
 class ExploreController extends GetxController {
   final ExploreRepository faqRepository;
